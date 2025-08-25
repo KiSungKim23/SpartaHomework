@@ -39,3 +39,10 @@
 
 # debug information files
 *.dwo
+
+.vs/
+**/.vs*/
+
+**/.idea*/
+
+**/*Debug/
