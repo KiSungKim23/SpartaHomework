@@ -1,12 +1,9 @@
-﻿#include <iostream>
-#include "player.h"
+﻿#include "player.h"
 #include "warrior.h"
 #include "magician.h"
 #include "thief.h"
 #include "archer.h"
-using namespace std;
 
-// 메인 함수
 int main() {
     string jobs[] = { "전사", "마법사", "도적", "궁수" };
     int job_choice = 0;
