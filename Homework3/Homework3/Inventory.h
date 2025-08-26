@@ -132,7 +132,7 @@ inline void Inventory<T>::Resize(int newCapacity)
 	{
 		temp[i] = _pItems[i];
 	}
-	delete _pItems;
+	delete[] _pItems;
 
 	cout << "크기 재조정 : " << newCapacity << endl;
 	_pItems = temp;
