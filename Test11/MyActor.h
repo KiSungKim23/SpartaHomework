@@ -31,6 +31,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Move")
 	void MoveToDest();
 
+	void Event();
+
 	void SetLog();
 protected:
 	// Called when the game starts or when spawned

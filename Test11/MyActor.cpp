@@ -55,12 +55,23 @@ void AMyActor::Tick(float DeltaTime)
 		if (FVector::DistSquared(Next, DestPosition) <= FMath::Square(Tolerance))
 		{
 			SetLog();
+			ActiveEvent();
 			SetActorLocation(DestPosition, false);
 			MoveToDest();
 		}
 	}
 
 	//SetActorLocation()
+}
+
+void AMyActor::ActiveEvent()
+{
+	auto temp = FMath::RandRange(1, 10);
+	if (temp <= 5)
+	{
+		UE_LOG(LogTemp, Log, TEXT("EventActive"));
+	}
+
 }
 
 int32 AMyActor::Step()
